@@ -1,0 +1,2 @@
+# js-vite
+Vite project
