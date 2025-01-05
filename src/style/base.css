@@ -1,5 +1,22 @@
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+/* 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+} */
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
