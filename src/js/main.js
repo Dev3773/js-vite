@@ -1,2 +1,2 @@
-import '../style/main.css';
-import '../js/hero';
+import "../scss/main.scss";
+import "../js/hero";
