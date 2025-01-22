@@ -1,0 +1,42 @@
+// Перелік кольорів
+$colors: (
+  'gray100': $gray100,
+  'gray200': $gray200,
+  'gray300': $gray300,
+  'gray400': $gray400,
+  'gray500': $gray500,
+  'gray600': $gray600,
+  'gray700': $gray700,
+  'gray800': $gray800,
+  'gray900': $gray900,
+  'primary': $primary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+  'white': $white,
+  'black': $black
+);
+
+// Перебираємо мапу кольорів
+@each $name, $color in $colors {
+
+  // колір тексту
+  .color-#{$name} {
+    color: $color;
+  }
+
+  // колір фону
+  .bg-#{$name} {
+    background-color: $color;
+  }
+
+  // заливка `svg`
+  .fill-#{$name} {
+    svg {
+      color: $color;
+    }
+  }
+}
