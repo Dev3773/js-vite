@@ -7,9 +7,11 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "push": "git add .; git commit -m 'update'; git push"
+    "push": "git add .; git commit -m 'update'; git push",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.83.4",
     "vite": "^6.0.1"
   },
